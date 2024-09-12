@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6mvp6yq3q#yuejo-bu+j2e1!zmoy3^!l1wu014pbin_jadsn5)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['new-bincom-9.onrender.com']
+ALLOWED_HOSTS = ['new-bincom-10.onrender.com']
 
 
 # Application definition
