@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            #results {
+                display: none;
+                margin-top: 20px;
+                padding: 10px;
+                border: 1px solid #ddd;
+            }
+        </style>
+</head>
+
+<body>
+    <h1>Party Totals in each Polling Unit</h1>
+    <label>
+        <input type="checkbox" id="showResults"> Show Party Totals
+    </label>
+
+    <div id="results">
+        <h2>Party Total Scores</h2>
+        <table id="resultsTable">{{sum|safe}}</table>
+    </div>
+
+    <script>
+        document.getElementById('showResults').addEventListener('change', function () {
+            const resultsDiv = document.getElementById('results');
+            if (this.checked) {
+                resultsDiv.style.display = 'block'
+            } else {
+                resultsDiv.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
